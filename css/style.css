@@ -21,4 +21,8 @@ html {
 .navbar-blur {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+h1, .text-h1 {
+    font-size: 2.5rem; /* 40px */
 } 
