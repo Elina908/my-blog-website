@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Developer Portfolio</title>
+    <meta name="description" content="About me page for the developer portfolio.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1E3A8A', // deep-blue
+                        'accent': '#3B82F6',  // light-blue
+                        'dark': '#111827',    // dark-grey for text
+                        'secondary': '#4B5563', // medium-grey for text
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Montserrat', 'sans-serif'],
+                        'mono': ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-dark font-sans">
+    
+    <!-- Header / Navigation Bar -->
+    <header id="navbar" class="bg-white shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-xl font-display font-bold text-dark flex items-center space-x-2">
+                <span class="text-accent">&lt;/&gt;</span>
+                <span>DevPortfolio</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-secondary hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-accent font-bold hover:text-accent transition">About</a>
+                <a href="projects.html" class="text-secondary hover:text-accent transition">Projects</a>
+                <a href="blog.html" class="text-secondary hover:text-accent transition">Blog</a>
+                <a href="contact.html" class="text-secondary hover:text-accent transition">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-dark">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="index.html" class="block py-2 px-6 text-secondary hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block py-2 px-6 text-accent bg-gray-100">About</a>
+            <a href="projects.html" class="block py-2 px-6 text-secondary hover:bg-gray-100">Projects</a>
+            <a href="blog.html" class="block py-2 px-6 text-secondary hover:bg-gray-100">Blog</a>
+            <a href="contact.html" class="block py-2 px-6 text-secondary hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-2">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131c5a9?q=80&w=2020&auto=format&fit=crop" 
+                             alt="Developer portrait"
+                             class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="md:col-span-3">
+                        <h1 class="text-h1 font-display font-bold text-primary mb-4">About Me</h1>
+                        <p class="text-secondary text-lg mb-6">
+                            I'm a passionate Full Stack Developer with a knack for creating elegant solutions in the least amount of time. I have a strong background in both frontend and backend technologies, and I love bringing ideas to life in the browser.
+                        </p>
+                        <p class="text-secondary mb-8">
+                            My journey in web development started years ago, and since then, I've been constantly learning and adapting to new technologies. I believe in writing clean, maintainable code and building user-friendly applications that solve real-world problems.
+                        </p>
+                        <a href="#" class="bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-900 transition-all duration-300">
+                            Download My Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="mt-20">
+                    <h2 class="text-h2 font-display font-bold text-center mb-12">My Skills</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <i class="fab fa-react text-4xl text-accent mb-2"></i>
+                            <p class="font-bold">React</p>
+                        </div>
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <i class="fab fa-node-js text-4xl text-accent mb-2"></i>
+                            <p class="font-bold">Node.js</p>
+                        </div>
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <i class="fab fa-js-square text-4xl text-accent mb-2"></i>
+                            <p class="font-bold">JavaScript</p>
+                        </div>
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <i class="fab fa-html5 text-4xl text-accent mb-2"></i>
+                            <p class="font-bold">HTML5</p>
+                        </div>
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <i class="fab fa-css3-alt text-4xl text-accent mb-2"></i>
+                            <p class="font-bold">CSS3</p>
+                        </div>
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <i class="fab fa-git-alt text-4xl text-accent mb-2"></i>
+                            <p class="font-bold">Git</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Column 1: Contact Info -->
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-4 text-gray-400">
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                            San Francisco, CA
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-3"></i>
+                            (+1) 123-456-7890
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope text-accent mr-3"></i>
+                            <a href="mailto:hello@example.com" class="hover:text-white transition">hello@example.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Social Media -->
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-gray-500 border-t border-gray-700 mt-12 pt-6">
+                <p>&copy; 2024 MyBrand. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
