@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Developer Portfolio</title>
-    <meta name="description" content="Blog page for the developer portfolio.">
+    <title>Blog Post - Developer Portfolio</title>
+    <meta name="description" content="A single blog post page.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,6 +19,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Syntax Highlighting (Prism.js) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 
     <script>
         tailwind.config = {
@@ -80,81 +83,59 @@
 
     <!-- Main Content -->
     <main class="pt-24">
-        <section id="blog-page" class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <h1 class="text-h1 font-display font-bold text-center mb-4">From the Blog</h1>
-                <p class="text-lg text-secondary text-center max-w-3xl mx-auto mb-12">Thoughts on technology, development, and everything in between.</p>
+        <article id="blog-post" class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                
+                <!-- Post Header -->
+                <header class="text-center mb-12">
+                    <a href="blog.html" class="text-accent font-semibold mb-4 inline-block hover:underline">
+                        <i class="fas fa-arrow-left fa-xs mr-2"></i>Back to Blog
+                    </a>
+                    <h1 class="text-h1 font-display font-bold text-dark leading-tight mb-4">
+                        The Ultimate Guide to Modern Frontend Development
+                    </h1>
+                    <div class="text-secondary">
+                        <span>By John Doe</span>
+                        <span class="mx-2">&bull;</span>
+                        <span>May 20, 2024</span>
+                        <span class="mx-2">&bull;</span>
+                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-sm">JavaScript</span>
+                    </div>
+                </header>
 
-                <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
-                    <!-- Blog Post 1 -->
-                    <div class="group">
-                        <h3 class="text-h3 font-display font-bold mb-2 group-hover:text-accent transition">
-                            <a href="blog-post.html">The Ultimate Guide to Modern Frontend Development</a>
-                        </h3>
-                        <p class="text-secondary mb-3">An overview of the tools and techniques that define modern web development in 2024.</p>
-                        <div class="flex items-center text-sm text-secondary">
-                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-3">JavaScript</span>
-                            <a href="blog-post.html" class="font-bold text-accent group-hover:underline">Read More <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Post 2 -->
-                    <div class="group">
-                        <h3 class="text-h3 font-display font-bold mb-2 group-hover:text-accent transition">
-                            <a href="blog-post.html">Deep Dive into CSS Grid and Flexbox</a>
-                        </h3>
-                        <p class="text-secondary mb-3">Discover the power of CSS Grid and Flexbox and how to use them to create complex layouts.</p>
-                        <div class="flex items-center text-sm text-secondary">
-                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-3">CSS</span>
-                            <a href="blog-post.html" class="font-bold text-accent group-hover:underline">Read More <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                     <!-- Blog Post 3 -->
-                     <div class="group">
-                        <h3 class="text-h3 font-display font-bold mb-2 group-hover:text-accent transition">
-                            <a href="blog-post.html">Building a REST API with Node.js and Express</a>
-                        </h3>
-                        <p class="text-secondary mb-3">A step-by-step tutorial on creating a robust and scalable API from scratch.</p>
-                        <div class="flex items-center text-sm text-secondary">
-                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-3">Node.js</span>
-                            <a href="blog-post.html" class="font-bold text-accent group-hover:underline">Read More <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                     <!-- Blog Post 4 -->
-                     <div class="group">
-                        <h3 class="text-h3 font-display font-bold mb-2 group-hover:text-accent transition">
-                            <a href="blog-post.html">Why You Should Use TypeScript in Your Next Project</a>
-                        </h3>
-                        <p class="text-secondary mb-3">Exploring the benefits of static typing in JavaScript and how it can improve code quality.</p>
-                        <div class="flex items-center text-sm text-secondary">
-                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-3">TypeScript</span>
-                            <a href="blog-post.html" class="font-bold text-accent group-hover:underline">Read More <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Post 5 -->
-                    <div class="group">
-                        <h3 class="text-h3 font-display font-bold mb-2 group-hover:text-accent transition">
-                            <a href="blog-post.html">Understanding Docker and Containers for Web Developers</a>
-                        </h3>
-                        <p class="text-secondary mb-3">A primer on containerization and how it can streamline your development workflow.</p>
-                        <div class="flex items-center text-sm text-secondary">
-                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-3">DevOps</span>
-                            <a href="blog-post.html" class="font-bold text-accent group-hover:underline">Read More <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Post 6 -->
-                    <div class="group">
-                        <h3 class="text-h3 font-display font-bold mb-2 group-hover:text-accent transition">
-                            <a href="blog-post.html">Getting Started with CI/CD Pipelines</a>
-                        </h3>
-                        <p class="text-secondary mb-3">Automate your testing and deployment process with a simple CI/CD pipeline using GitHub Actions.</p>
-                        <div class="flex items-center text-sm text-secondary">
-                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-3">CI/CD</span>
-                            <a href="blog-post.html" class="font-bold text-accent group-hover:underline">Read More <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
-                        </div>
-                    </div>
+                <!-- Featured Image -->
+                <figure class="mb-12">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" alt="Modern Frontend Development" class="w-full h-auto rounded-lg shadow-lg">
+                </figure>
+
+                <!-- Post Content -->
+                <div class="prose lg:prose-xl max-w-none">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                    
+                    <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.</p>
+
+                    <h2>Understanding the Core Concepts</h2>
+                    <p>Mauris ac felis vitae velit tristique imperdiet. Donec at pede. Duis vel nibh at velit scelerisque suscipit. Nam dictum sem, ipsum aliquam . Etiam sit amet est.</p>
+                    
+                    <ul>
+                        <li><strong>Component-Based Architecture:</strong> Frameworks like React, Vue, and Svelte.</li>
+                        <li><strong>State Management:</strong> Tools like Redux, Vuex, or context APIs.</li>
+                        <li><strong>Build Tools:</strong> Webpack, Vite, and Parcel.</li>
+                    </ul>
+
+                    <p>Here is an example of a simple JavaScript function:</p>
+                    <pre><code class="language-js">function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet('World');</code></pre>
+
+                    <h2>The Importance of Performance</h2>
+                    <p>Phasellus tristique libero vel justo. Mauris tincidunt, nulla quis rhoncus malesuada, mi nisl tempor nunc, eget porttitor dolor nisl et nisi. Duis ante. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum. Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus, a condimentum risus mi et quam. Pellentesque auctor fringilla neque. Duis eu massa ut lorem iaculis vestibulum.</p>
                 </div>
+
             </div>
-        </section>
+        </article>
     </main>
 
     <!-- Footer -->
@@ -210,6 +191,9 @@
         </div>
     </footer>
 
+
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html> 
